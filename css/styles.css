@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.date-picker-btn-container{
+    text-align: center; 
+    margin: 2rem; 
+}
+.date-picker-btn{
+    font-size: 1.5rem;
+    background-color: buttonface;
+}
+.date-picker-btn:hover{
+    font-size: 1.5rem;
+    background-color: pink;
+}
+
+.calendar-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem; 
+    font-weight: bold; 
+    /* border: solid;  */
+    padding: .5rem 1rem; 
+}
+.calendar-header-arrow-btn{
+    background-color: white;
+    border: none; 
+    padding: none; 
+
+}
+.calendar-header-arrow-btn:hover{
+    background-color: coral;
+}
+
+.calendar-container{
+    display: none; 
+}
+
+.calendar-container[show]{
+    display: flex; 
+    flex-direction: column; 
+    max-width: 400px;
+    text-align: center; 
+    margin: auto; 
+    border: solid; 
+}
+
+.calendar-day-names{
+    display: flex;
+    font-size: 0.8rem; 
+    font-weight: bold; 
+}
+.day-name{
+    flex: 1; 
+}
+.calendar-main{
+    display: flex; 
+    flex-wrap:wrap; 
+}
+
+/* smaller els */
+.calendar-date{
+    font-size: 1rem; 
+    padding: 1rem; 
+    flex: 1;
+    flex-basis: calc(100%/7); 
+}
+[shaded]{
+    color: grey; 
+}
+.calendar-date:not([shaded]):hover{
+    background-color: lightcoral; 
+    border-radius: 1rem;
+}
+
+
+
